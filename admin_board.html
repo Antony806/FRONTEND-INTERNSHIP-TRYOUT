@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>X Planet Internships</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100">
+  <!-- Updated Header Section -->
+  <header class="flex overflow-hidden flex-wrap gap-5 justify-between self-stretch px-20 py-4 w-full bg-white max-md:px-5 max-md:max-w-full">
+    <div class="flex flex-col justify-center p-2.5">
+      <div class="flex gap-5 items-end w-full">
+        <div class="flex gap-2 justify-center items-center w-[50px]">
+          <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/TEMP/c22b4c7237fdd4bcb112a3929ecbcbcbc474b1020d037630fc89e858e3fefbb1?placeholderIfAbsent=true&apiKey=bb90c9e75e8943e9a75ff0b6559faab2" class="object-contain self-stretch my-auto aspect-[1.09] w-[50px]" alt="X Planet logo" />
+        </div>
+        <h1 class="text-3xl font-semibold text-center text-blue-700">X planet</h1>
+      </div>
+    </div>
+    <nav class="flex gap-4 justify-center items-center my-auto text-base font-semibold capitalize">
+      <a href="#" class="gap-2.5 self-stretch px-2.5 py-3 my-auto text-blue-700 rounded-md border border-indigo-200 border-solid min-h-[48px] w-[100px] flex items-center justify-center" role="button">Sign In</a>
+      <a href="#" class="gap-2.5 self-stretch px-2.5 py-3 my-auto bg-blue-700 rounded-md min-h-[48px] text-neutral-50 w-[130px] flex items-center justify-center" role="button">Post A Job</a>
+    </nav>
+  </header>
+      
+  
+  <!-- Search Bar Section -->
+<section class="flex flex-col justify-center items-center px-5 py-3 w-full text-base bg-white rounded-lg border border-solid border-zinc-200 max-w-[860px] min-h-[74px] shadow-[0px_1px_4px_rgba(0,0,0,0.16)] max-md:max-w-full mx-auto mt-6">
+    <form class="flex flex-wrap gap-10 items-center bg-white max-md:max-w-full">
+      <div class="flex flex-wrap gap-5 items-center self-stretch my-auto text-gray-400 min-w-[240px] max-md:max-w-full">
+        <div class="flex gap-4 items-center self-stretch pl-4 my-auto w-[227px]">
+          <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/TEMP/ce3c69df108e919ed210eadcbd16a5328fa5e0899cdd8c618b40afdeaf4ce396?placeholderIfAbsent=true&apiKey=bb90c9e75e8943e9a75ff0b6559faab2" alt="" class="object-contain shrink-0 self-stretch my-auto w-6 aspect-square" />
+          <label for="jobSearch" class="sr-only">Job title or Keyword</label>
+          <input type="text" id="jobSearch" placeholder="Job title, Keyword..." class="self-stretch my-auto" aria-label="Job title or Keyword" />
+          <div class="shrink-0 self-stretch my-auto w-0 h-9 border border-solid border-zinc-200"></div>
+        </div>
+        <div class="flex gap-3 items-center self-stretch pl-4 my-auto whitespace-nowrap w-[152px]">
+          <div class="flex gap-4 items-center self-stretch my-auto">
+            <label for="experience" class="self-stretch my-auto">Experience</label>
+            <select id="experience" class="sr-only">
+              <option value="">Select experience</option>
+            </select>
+            <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/TEMP/a2cad72e86008f3a9eac5915b5cd6393cc28c205c51759086e8b16915d79d310?placeholderIfAbsent=true&apiKey=bb90c9e75e8943e9a75ff0b6559faab2" alt="" class="object-contain shrink-0 self-stretch my-auto w-6 aspect-square" />
+          </div>
+          <div class="shrink-0 self-stretch my-auto w-0 h-9 border border-solid border-zinc-200"></div>
+        </div>
+        <div class="flex gap-9 items-center self-stretch px-4 my-auto w-[211px]">
+          <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/TEMP/b41c19feae31c5b2a0f29f9340649541a3b064d62d1ee09b4b8820f8ce3eaca2?placeholderIfAbsent=true&apiKey=bb90c9e75e8943e9a75ff0b6559faab2" alt="" class="object-contain shrink-0 self-stretch my-auto w-6 aspect-square" />
+          <label for="location" class="sr-only">Your Location</label>
+          <input type="text" id="location" placeholder="Your Location" class="self-stretch my-auto" aria-label="Your Location" />
+        </div>
+      </div>
+      <button type="submit" class="self-stretch px-8 py-3.5 my-auto font-medium capitalize bg-blue-700 rounded-[30px] text-neutral-50 w-[130px] max-md:px-5">
+        Find Job
+      </button>
+    </form>
+  </section>
+  
+  <!-- Suggestions Section (Separate) -->
+  <section class="flex flex-wrap gap-2 items-center justify-center mt-4 text-sm leading-none text-center text-neutral-600 max-md:max-w-full">
+    <p class="text-gray-400">Suggestion:</p>
+    <p class="ml-1">Programming,</p>
+    <p class="ml-1 font-medium text-blue-700">Designer,</p>
+    <p class="ml-1">Digital Marketing,</p>
+    <p class="ml-1">Animation,</p>
+    <p class="ml-1">Editor.</p>
+  </section>
+  
+  
+  <!-- Categories Section (Updated with new code) -->
+  <section class="flex flex-col mt-8 w-full max-w-[1300px] text-stone-950 max-md:max-w-full mx-auto">
+    <h2 class="text-3xl font-semibold text-center max-md:max-w-full">Latest internship on X planet</h2>
+    <div class="flex flex-wrap gap-10 justify-between items-center mt-7 w-full font-medium max-md:max-w-full">
+      <p class="self-stretch my-auto text-xl text-center">Popular Categories:</p>
+      <nav class="flex flex-wrap gap-5 justify-center items-center self-stretch my-auto text-lg min-w-[240px] max-md:max-w-full">
+        <button class="gap-2.5 self-stretch px-2.5 py-3.5 my-auto text-center whitespace-nowrap bg-blue-700 rounded-3xl min-h-[48px] text-neutral-50 w-[150px]">Commerce</button>
+        <button class="gap-2.5 self-stretch px-2.5 py-3.5 my-auto bg-white rounded-3xl border border-solid border-stone-300 min-h-[48px] w-[190px]">Service Based</button>
+        <button class="gap-5 self-stretch py-3.5 pr-4 pl-4 my-auto w-40 text-center whitespace-nowrap bg-white rounded-3xl border border-solid border-stone-300 min-h-[48px]">Marketing</button>
+        <button class="gap-5 self-stretch px-3.5 py-3.5 my-auto text-center whitespace-nowrap bg-white rounded-3xl border border-solid border-stone-300 min-h-[48px] w-[150px]">Media</button>
+        <button class="gap-5 self-stretch px-3.5 py-3.5 my-auto text-center whitespace-nowrap bg-white rounded-3xl border border-solid border-stone-300 min-h-[48px] w-[150px]">Business</button>
+        <button class="gap-5 self-stretch px-4 py-3.5 my-auto text-center bg-white rounded-3xl border border-solid border-stone-300 min-h-[48px] w-[170px]">Data science</button>
+      </nav>
+    </div>
+  </section>
+
+  <!-- Internship Cards Section -->
+  <section class="container mx-auto py-6 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+    <!-- Card 1: UX/UI Designer Intern -->
+    <section class="flex flex-col grow justify-center px-9 py-9 w-full bg-white rounded-lg border border-solid border-zinc-200 min-h-[325px] shadow-[0px_1px_4px_rgba(0,0,0,0.16)] max-md:px-5 max-md:mt-5">
+      <div class="flex flex-col w-full max-w-[352px]">
+        <header class="flex gap-8 justify-between items-start w-full text-xs text-neutral-950">
+          <div class="flex relative flex-col items-start font-medium leading-none min-w-[240px] w-[251px]">
+            <h2 class="z-0 self-stretch text-lg leading-loose">UX/ UI Designer Intern</h2>
+            <div class="flex z-0 gap-6 items-end mt-4 uppercase whitespace-nowrap w-[85px]">
+              <span class="gap-2.5 self-stretch px-2.5 py-2 rounded bg-zinc-500 bg-opacity-20 min-h-[25px] w-[85px]">X planet</span>
+            </div>
+            <div class="flex absolute bottom-0 z-0 gap-6 items-end text-green-600 uppercase whitespace-nowrap right-[65px] w-[85px]">
+              <span class="gap-2.5 self-stretch px-2.5 py-2 bg-green-100 rounded min-h-[25px] w-[85px]">Full-time</span>
+            </div>
+          </div>
+          <span class="gap-1.5 self-stretch px-1.5 py-px leading-7 whitespace-nowrap rounded border border-solid border-zinc-200 min-h-[30px] w-[70px]">Hiring</span>
+        </header>
+        <div class="flex flex-col justify-center items-start mt-4 max-w-full text-lg text-zinc-950 text-opacity-70 w-[186px]">
+          <div class="flex gap-4 justify-center items-center">
+            <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/TEMP/cf0d8127254fc991b555fbdb1d38e8d5c88a7d31cbbf207e7bec9caa477a9b59?placeholderIfAbsent=true&apiKey=bb90c9e75e8943e9a75ff0b6559faab2" class="object-contain shrink-0 self-stretch my-auto w-6 aspect-square" alt="Location icon" />
+            <p class="self-stretch my-auto">Chennai</p>
+          </div>
+          <div class="flex gap-4 justify-center items-center self-stretch mt-5 w-full">
+            <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/TEMP/c2287705ab0b083df602298fe964b40db9c040373150ea12ba8fa8b759805569?placeholderIfAbsent=true&apiKey=bb90c9e75e8943e9a75ff0b6559faab2" class="object-contain shrink-0 self-stretch my-auto w-6 aspect-square" alt="Salary icon" />
+            <p class="self-stretch my-auto">₹ 20,000 / Month</p>
+          </div>
+          <div class="flex gap-4 justify-center items-center mt-5">
+            <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/TEMP/129dc811bf7545cf21fd42d16e540ae5035426296e633a0727fe15216c689caa?placeholderIfAbsent=true&apiKey=bb90c9e75e8943e9a75ff0b6559faab2" class="object-contain shrink-0 self-stretch my-auto w-6 aspect-square" alt="Duration icon" />
+            <p class="self-stretch my-auto">3 Months</p>
+          </div>
+        </div>
+        <footer class="flex gap-10 items-center mt-6 w-full text-sm font-medium">
+          <div class="flex gap-8 items-center self-stretch my-auto min-w-[240px]">
+            <span class="gap-2.5 self-stretch px-2.5 py-3 my-auto text-blue-700 whitespace-nowrap rounded-md bg-sky-100 bg-opacity-80 min-h-[38px] w-[100px]">Internship</span>
+            <button class="flex gap-2.5 justify-center items-center self-stretch pr-1.5 pl-2 my-auto text-indigo-500 bg-indigo-50 rounded-md min-h-[38px] w-[130px]">
+              <span class="self-stretch my-auto">View Details</span>
+              <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/TEMP/98ef27d68b073e98722a09f93ee3356ce5dd58e11296eaca9810391962353680?placeholderIfAbsent=true&apiKey=bb90c9e75e8943e9a75ff0b6559faab2" class="object-contain shrink-0 self-stretch my-auto w-6 aspect-square" alt="View details icon" />
+            </button>
+          </div>
+          <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/TEMP/d3a6748a9bdd9387b3d991c4a028605bdce869b1f4261e52e02fe8f9b0793178?placeholderIfAbsent=true&apiKey=bb90c9e75e8943e9a75ff0b6559faab2" class="object-contain shrink-0 self-stretch my-auto w-8 aspect-square" alt="Additional action icon" />
+        </footer>
+      </div>
+    </section>
+  
+    <!-- Card 2: Project Manager -->
+    <section class="flex flex-col grow justify-center px-9 py-9 w-full bg-white rounded-lg border border-solid border-zinc-200 min-h-[325px] shadow-[0px_1px_4px_rgba(0,0,0,0.16)] max-md:px-5 max-md:mt-5">
+      <div class="flex flex-col w-full max-w-[352px]">
+        <header class="flex gap-8 justify-between items-start w-full text-xs text-neutral-950">
+          <div class="flex relative flex-col items-start font-medium leading-none min-w-[240px] w-[251px]">
+            <h2 class="z-0 self-stretch text-lg leading-loose">Project Manager</h2>
+            <div class="flex z-0 gap-6 items-end mt-4 uppercase whitespace-nowrap w-[85px]">
+              <span class="gap-2.5 self-stretch px-2.5 py-2 rounded bg-zinc-500 bg-opacity-20 min-h-[25px] w-[85px]">TCS</span>
+            </div>
+            <div class="flex absolute bottom-0 z-0 gap-6 items-end text-green-600 uppercase whitespace-nowrap right-[65px] w-[85px]">
+              <span class="gap-2.5 self-stretch py-2 pr-1.5 pl-2 bg-green-100 rounded min-h-[25px] w-[85px]">Internship</span>
+            </div>
+          </div>
+          <span class="gap-1.5 self-stretch px-1.5 py-px leading-7 whitespace-nowrap rounded border border-solid border-zinc-200 min-h-[30px] w-[70px]">Hiring</span>
+        </header>
+        <ul class="flex flex-col justify-center items-start mt-4 max-w-full text-lg text-zinc-950 text-opacity-70 w-[186px] list-none">
+          <li class="flex gap-4 justify-center items-center whitespace-nowrap">
+            <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/TEMP/cf0d8127254fc991b555fbdb1d38e8d5c88a7d31cbbf207e7bec9caa477a9b59?placeholderIfAbsent=true&apiKey=bb90c9e75e8943e9a75ff0b6559faab2" class="object-contain shrink-0 self-stretch my-auto w-6 aspect-square" alt="Location icon" />
+            <span class="self-stretch my-auto">Chennai</span>
+          </li>
+          <li class="flex gap-4 justify-center items-center self-stretch mt-5 w-full">
+            <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/TEMP/c2287705ab0b083df602298fe964b40db9c040373150ea12ba8fa8b759805569?placeholderIfAbsent=true&apiKey=bb90c9e75e8943e9a75ff0b6559faab2" class="object-contain shrink-0 self-stretch my-auto w-6 aspect-square" alt="Salary icon" />
+            <span class="self-stretch my-auto">₹ 18,000 / Month</span>
+          </li>
+          <li class="flex gap-4 justify-center items-center mt-5">
+            <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/TEMP/48f33104e75e5c6765c674dd83580c7736ad64ae487cfbf779f600b30059bcd8?placeholderIfAbsent=true&apiKey=bb90c9e75e8943e9a75ff0b6559faab2" class="object-contain shrink-0 self-stretch my-auto w-6 aspect-square" alt="Duration icon" />
+            <span class="self-stretch my-auto">3 Months</span>
+          </li>
+        </ul>
+        <footer class="flex gap-10 items-center mt-6 w-full text-sm font-medium">
+          <div class="flex gap-8 items-center self-stretch my-auto min-w-[240px]">
+            <button class="gap-2.5 self-stretch px-2.5 py-3 my-auto text-blue-700 whitespace-nowrap rounded-md bg-sky-100 bg-opacity-80 min-h-[38px] w-[100px]">Internship</button>
+            <button class="flex gap-2.5 justify-center items-center self-stretch pr-1.5 pl-2 my-auto text-indigo-500 bg-indigo-50 rounded-md min-h-[38px] w-[130px]">
+              <span class="self-stretch my-auto">View Details</span>
+              <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/TEMP/98ef27d68b073e98722a09f93ee3356ce5dd58e11296eaca9810391962353680?placeholderIfAbsent=true&apiKey=bb90c9e75e8943e9a75ff0b6559faab2" class="object-contain shrink-0 self-stretch my-auto w-6 aspect-square" alt="View details icon" />
+            </button>
+          </div>
+          <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/TEMP/d3a6748a9bdd9387b3d991c4a028605bdce869b1f4261e52e02fe8f9b0793178?placeholderIfAbsent=true&apiKey=bb90c9e75e8943e9a75ff0b6559faab2" class="object-contain shrink-0 self-stretch my-auto w-8 aspect-square" alt="Additional action icon" />
+        </footer>
+      </div>
+    </section>
+  
+    <!-- Card 3: Software Engineer -->
+    <section class="flex flex-col grow justify-center px-9 py-9 w-full bg-white rounded-lg border border-solid border-zinc-200 min-h-[325px] shadow-[0px_1px_4px_rgba(0,0,0,0.16)] max-md:px-5 max-md:mt-5">
+      <div class="flex flex-col w-full max-w-[352px]">
+        <header class="flex gap-8 justify-between items-start w-full text-xs text-neutral-950">
+          <div class="flex relative flex-col items-start font-medium leading-none min-w-[240px] w-[251px]">
+            <h2 class="z-0 self-stretch text-lg leading-loose">Software Engineer</h2>
+            <div class="flex z-0 gap-6 items-end mt-4 uppercase whitespace-nowrap w-[85px]">
+              <span class="gap-2.5 self-stretch px-2.5 py-2 rounded bg-zinc-500 bg-opacity-20 min-h-[25px] w-[85px]">ZOHO</span>
+            </div>
+            <div class="flex absolute bottom-0 z-0 gap-6 items-end text-green-600 uppercase whitespace-nowrap right-[65px] w-[85px]">
+              <span class="gap-2.5 self-stretch px-2.5 py-2 bg-green-100 rounded min-h-[25px] w-[85px]">Full-time</span>
+            </div>
+          </div>
+          <span class="gap-1.5 self-stretch px-1.5 py-px leading-7 whitespace-nowrap rounded border border-solid border-zinc-200 min-h-[30px] w-[70px]">Hiring</span>
+        </header>
+        <div class="flex flex-col justify-center items-start mt-4 max-w-full text-lg text-zinc-950 text-opacity-70 w-[186px]">
+          <div class="flex gap-4 justify-center items-center">
+            <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/TEMP/cf0d8127254fc991b555fbdb1d38e8d5c88a7d31cbbf207e7bec9caa477a9b59?placeholderIfAbsent=true&apiKey=bb90c9e75e8943e9a75ff0b6559faab2" class="object-contain shrink-0 self-stretch my-auto w-6 aspect-square" alt="Location icon" />
+            <p class="self-stretch my-auto">Dhaka, Bangladesh</p>
+          </div>
+          <div class="flex gap-4 justify-center items-center self-stretch mt-5 w-full">
+            <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/TEMP/0014628e0282a6e5e78e46f20ece771bd2f431dedeeecd32dbcd0399acd15bd0?placeholderIfAbsent=true&apiKey=bb90c9e75e8943e9a75ff0b6559faab2" class="object-contain shrink-0 self-stretch my-auto w-6 aspect-square" alt="Salary icon" />
+            <p class="self-stretch my-auto">₹ 30,000 / Month</p>
+          </div>
+          <div class="flex gap-4 justify-center items-center mt-5">
+            <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/TEMP/29a76b28cf16d2a1e936cae7dcb509e1165527b04888e2a2360f4f22d4c1ef56?placeholderIfAbsent=true&apiKey=bb90c9e75e8943e9a75ff0b6559faab2" class="object-contain shrink-0 self-stretch my-auto w-6 aspect-square" alt="Duration icon" />
+            <p class="self-stretch my-auto">8 Months</p>
+          </div>
+        </div>
+        <footer class="flex gap-10 items-center mt-6 w-full text-sm font-medium">
+          <div class="flex gap-8 items-center self-stretch my-auto min-w-[240px]">
+            <span class="gap-2.5 self-stretch px-2.5 py-3 my-auto text-blue-700 whitespace-nowrap rounded-md bg-sky-100 bg-opacity-80 min-h-[38px] w-[100px]">Internship</span>
+            <button class="flex gap-2.5 justify-center items-center self-stretch pr-1.5 pl-2 my-auto text-indigo-500 bg-indigo-50 rounded-md min-h-[38px] w-[130px]">
+              <span class="self-stretch my-auto">View Details</span>
+              <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/TEMP/98ef27d68b073e98722a09f93ee3356ce5dd58e11296eaca9810391962353680?placeholderIfAbsent=true&apiKey=bb90c9e75e8943e9a75ff0b6559faab2" class="object-contain shrink-0 self-stretch my-auto w-6 aspect-square" alt="View details icon" />
+            </button>
+          </div>
+          <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/TEMP/d3a6748a9bdd9387b3d991c4a028605bdce869b1f4261e52e02fe8f9b0793178?placeholderIfAbsent=true&apiKey=bb90c9e75e8943e9a75ff0b6559faab2" class="object-contain shrink-0 self-stretch my-auto w-8 aspect-square" alt="Additional action icon" />
+        </footer>
+      </div>
+    </section>
+  </section>
+<!-- card 4 -->
+   <section class="container mx-auto py-6 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+   
+    <section class="flex flex-col grow justify-center px-9 py-9 w-full bg-white rounded-lg border border-solid border-zinc-200 min-h-[325px] shadow-[0px_1px_4px_rgba(0,0,0,0.16)] max-md:px-5 max-md:mt-5">
+      <div class="flex flex-col w-full max-w-[352px]">
+        <header class="flex gap-8 justify-between items-start w-full text-xs text-neutral-950">
+          <div class="flex relative flex-col items-start font-medium leading-none min-w-[240px] w-[251px]">
+            <h2 class="z-0 self-stretch text-lg leading-loose">Front End Developer</h2>
+            <div class="flex z-0 gap-6 items-end mt-4 uppercase whitespace-nowrap w-[85px]">
+              <span class="gap-2.5 self-stretch px-2.5 py-2 rounded bg-zinc-500 bg-opacity-20 min-h-[25px] w-[85px]">X planet</span>
+            </div>
+            <div class="flex absolute bottom-0 z-0 gap-6 items-end text-green-600 uppercase whitespace-nowrap right-[65px] w-[85px]">
+              <span class="gap-2.5 self-stretch px-2.5 py-2 bg-green-100 rounded min-h-[25px] w-[85px]">Full-time</span>
+            </div>
+          </div>
+          <span class="gap-1.5 self-stretch px-1.5 py-px leading-7 whitespace-nowrap rounded border border-solid border-zinc-200 min-h-[30px] w-[70px]">Hiring</span>
+        </header>
+        <div class="flex flex-col justify-center items-start mt-4 max-w-full text-lg text-zinc-950 text-opacity-70 w-[186px]">
+          <div class="flex gap-4 justify-center items-center">
+            <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/TEMP/cf0d8127254fc991b555fbdb1d38e8d5c88a7d31cbbf207e7bec9caa477a9b59?placeholderIfAbsent=true&apiKey=bb90c9e75e8943e9a75ff0b6559faab2" class="object-contain shrink-0 self-stretch my-auto w-6 aspect-square" alt="Location icon" />
+            <p class="self-stretch my-auto">Hyderabad</p>
+          </div>
+          <div class="flex gap-4 justify-center items-center self-stretch mt-5 w-full">
+            <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/TEMP/c2287705ab0b083df602298fe964b40db9c040373150ea12ba8fa8b759805569?placeholderIfAbsent=true&apiKey=bb90c9e75e8943e9a75ff0b6559faab2" class="object-contain shrink-0 self-stretch my-auto w-6 aspect-square" alt="Salary icon" />
+            <p class="self-stretch my-auto">₹ 25,000 / Month</p>
+          </div>
+          <div class="flex gap-4 justify-center items-center mt-5">
+            <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/TEMP/129dc811bf7545cf21fd42d16e540ae5035426296e633a0727fe15216c689caa?placeholderIfAbsent=true&apiKey=bb90c9e75e8943e9a75ff0b6559faab2" class="object-contain shrink-0 self-stretch my-auto w-6 aspect-square" alt="Duration icon" />
+            <p class="self-stretch my-auto">6 Months</p>
+          </div>
+        </div>
+        <footer class="flex gap-10 items-center mt-6 w-full text-sm font-medium">
+          <div class="flex gap-8 items-center self-stretch my-auto min-w-[240px]">
+            <span class="gap-2.5 self-stretch px-2.5 py-3 my-auto text-blue-700 whitespace-nowrap rounded-md bg-sky-100 bg-opacity-80 min-h-[38px] w-[100px]">Internship</span>
+            <button class="flex gap-2.5 justify-center items-center self-stretch pr-1.5 pl-2 my-auto text-indigo-500 bg-indigo-50 rounded-md min-h-[38px] w-[130px]">
+              <span class="self-stretch my-auto">View Details</span>
+              <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/TEMP/98ef27d68b073e98722a09f93ee3356ce5dd58e11296eaca9810391962353680?placeholderIfAbsent=true&apiKey=bb90c9e75e8943e9a75ff0b6559faab2" class="object-contain shrink-0 self-stretch my-auto w-6 aspect-square" alt="View details icon" />
+            </button>
+          </div>
+          <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/TEMP/d3a6748a9bdd9387b3d991c4a028605bdce869b1f4261e52e02fe8f9b0793178?placeholderIfAbsent=true&apiKey=bb90c9e75e8943e9a75ff0b6559faab2" class="object-contain shrink-0 self-stretch my-auto w-8 aspect-square" alt="Additional action icon" />
+        </footer>
+      </div>
+    </section>
+<!--card5-->
+    <section class="flex flex-col grow justify-center px-9 py-9 w-full bg-white rounded-lg border border-solid border-zinc-200 min-h-[325px] shadow-[0px_1px_4px_rgba(0,0,0,0.16)] max-md:px-5 max-md:mt-5">
+      <div class="flex flex-col w-full max-w-[352px]">
+        <header class="flex gap-8 justify-between items-start w-full text-xs text-neutral-950">
+          <div class="flex relative flex-col items-start font-medium leading-none min-w-[240px] w-[251px]">
+            <h2 class="z-0 self-stretch text-lg leading-loose">Junior Graphic Designer</h2>
+            <div class="flex z-0 gap-6 items-end mt-4 uppercase whitespace-nowrap w-[85px]">
+              <span class="gap-2.5 self-stretch px-2.5 py-2 rounded bg-zinc-500 bg-opacity-20 min-h-[25px] w-[85px]">TCS</span>
+            </div>
+            <div class="flex absolute bottom-0 z-0 gap-6 items-end text-green-600 uppercase whitespace-nowrap right-[65px] w-[85px]">
+              <span class="gap-2.5 self-stretch py-2 pr-1.5 pl-2 bg-green-100 rounded min-h-[25px] w-[85px]">Internship</span>
+            </div>
+          </div>
+          <span class="gap-1.5 self-stretch px-1.5 py-px leading-7 whitespace-nowrap rounded border border-solid border-zinc-200 min-h-[30px] w-[70px]">Hiring</span>
+        </header>
+        <ul class="flex flex-col justify-center items-start mt-4 max-w-full text-lg text-zinc-950 text-opacity-70 w-[186px] list-none">
+          <li class="flex gap-4 justify-center items-center whitespace-nowrap">
+            <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/TEMP/cf0d8127254fc991b555fbdb1d38e8d5c88a7d31cbbf207e7bec9caa477a9b59?placeholderIfAbsent=true&apiKey=bb90c9e75e8943e9a75ff0b6559faab2" class="object-contain shrink-0 self-stretch my-auto w-6 aspect-square" alt="Location icon" />
+            <span class="self-stretch my-auto">Pune</span>
+          </li>
+          <li class="flex gap-4 justify-center items-center self-stretch mt-5 w-full">
+            <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/TEMP/c2287705ab0b083df602298fe964b40db9c040373150ea12ba8fa8b759805569?placeholderIfAbsent=true&apiKey=bb90c9e75e8943e9a75ff0b6559faab2" class="object-contain shrink-0 self-stretch my-auto w-6 aspect-square" alt="Salary icon" />
+            <span class="self-stretch my-auto">₹ 25,000 / Month</span>
+          </li>
+          <li class="flex gap-4 justify-center items-center mt-5">
+            <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/TEMP/48f33104e75e5c6765c674dd83580c7736ad64ae487cfbf779f600b30059bcd8?placeholderIfAbsent=true&apiKey=bb90c9e75e8943e9a75ff0b6559faab2" class="object-contain shrink-0 self-stretch my-auto w-6 aspect-square" alt="Duration icon" />
+            <span class="self-stretch my-auto">6 Months</span>
+          </li>
+        </ul>
+        <footer class="flex gap-10 items-center mt-6 w-full text-sm font-medium">
+          <div class="flex gap-8 items-center self-stretch my-auto min-w-[240px]">
+            <button class="gap-2.5 self-stretch px-2.5 py-3 my-auto text-blue-700 whitespace-nowrap rounded-md bg-sky-100 bg-opacity-80 min-h-[38px] w-[100px]">Internship</button>
+            <button class="flex gap-2.5 justify-center items-center self-stretch pr-1.5 pl-2 my-auto text-indigo-500 bg-indigo-50 rounded-md min-h-[38px] w-[130px]">
+              <span class="self-stretch my-auto">View Details</span>
+              <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/TEMP/98ef27d68b073e98722a09f93ee3356ce5dd58e11296eaca9810391962353680?placeholderIfAbsent=true&apiKey=bb90c9e75e8943e9a75ff0b6559faab2" class="object-contain shrink-0 self-stretch my-auto w-6 aspect-square" alt="View details icon" />
+            </button>
+          </div>
+          <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/TEMP/d3a6748a9bdd9387b3d991c4a028605bdce869b1f4261e52e02fe8f9b0793178?placeholderIfAbsent=true&apiKey=bb90c9e75e8943e9a75ff0b6559faab2" class="object-contain shrink-0 self-stretch my-auto w-8 aspect-square" alt="Additional action icon" />
+        </footer>
+      </div>
+    </section>
+    <section class="flex flex-col grow justify-center px-9 py-9 w-full bg-white rounded-lg border border-solid border-zinc-200 min-h-[325px] shadow-[0px_1px_4px_rgba(0,0,0,0.16)] max-md:px-5 max-md:mt-5">
+        <div class="flex justify-center items-center h-full w-full">
+          <div class="flex flex-col items-center justify-center text-xl font-medium leading-tight text-blue-700 capitalize">
+            <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/TEMP/9dd144a227de522b38a294a4f5f4a02f680a2cb6d0d7eb9f9cd93d981ee9039d?placeholderIfAbsent=true&apiKey=bb90c9e75e8943e9a75ff0b6559faab2" class="object-contain aspect-square w-[60px]" alt="Post a job icon" />
+            <h2 class="mt-6">Post a job</h2>
+          </div>
+        </div>
+      </section>
+      
